@@ -60,7 +60,7 @@ ORDER BY c.email;
 /* Q7: Let's invite the artists who have written the most rock music in our dataset. Write
        a query that returns the Artist name and total track count of the top 10 rock bands. */
 
-SELECT artist.name, genre.name, COUNT(artist.name) AS no_of_rock_songs
+SELECT artist.name, COUNT(artist.name) AS no_of_rock_songs
 FROM artist 
 JOIN album ON artist.artist_id = album.artist_id
 JOIN track ON album.album_id = track.album_id
