@@ -47,7 +47,7 @@ LIMIT 1;
 /* Q6- Write query to return the email, first_name, last_name and genre of all Rock Music 
        Listeners. Return your list ordered alphabetically by email starting with A. */
 
-SELECT DISTINCT c.email, c.first_name, c.last_name, g.name AS genre
+SELECT DISTINCT c.email, c.first_name, c.last_name
 FROM customer c
 JOIN invoice i ON c.customer_id = i.customer_id
 JOIN invoice_line il ON i.invoice_id = il.invoice_id
@@ -57,7 +57,7 @@ WHERE g.name = 'Rock'
 ORDER BY c.email;
 
 
-/* Q7: Let us invite the artists who have written the most rock music in our dataset. Write
+/* Q7: Let's invite the artists who have written the most rock music in our dataset. Write
        a query that returns the Artist name and total track count of the top 10 rock bands. */
 
 SELECT artist.name, genre.name, COUNT(artist.name) AS no_of_rock_songs
