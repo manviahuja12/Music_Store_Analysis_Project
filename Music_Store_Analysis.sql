@@ -33,7 +33,7 @@ ORDER BY invoice_totals DESC
 LIMIT 1;
 
 
-/* 5- Who is the best customer? The customer has spend the most money will be declared as 
+/* 5- Who is the best customer? The customer who has spend the most money will be declared as 
       the best customer. Write a query that returns who has spent the most money.*/
 
 SELECT c.customer_id, c.first_name, c.last_name, SUM(i.total) AS total_spent
