@@ -45,7 +45,7 @@ ORDER BY total_spent DESC
 LIMIT 1;
 
 /* Q6- Write query to return the email, first_name, last_name and genre of all Rock Music 
-       Listeners Return your list ordered alphabetically by email starting with A. */
+       Listeners. Return your list ordered alphabetically by email starting with A. */
 
 SELECT DISTINCT c.email, c.first_name, c.last_name, g.name AS genre
 FROM customer c
