@@ -16,7 +16,7 @@ LIMIT 1;
 
 /* Q3: What are top three values of total invoice? */
 
-SELECT total FROM invoice
+SELECT invoice_id, total FROM invoice
 ORDER BY total DESC
 LIMIT 3;
 
